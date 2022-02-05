@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBProject_Team11", "DBProject_Team11\DBProject_Team11.csproj", "{130B9A91-6A54-4B12-B88F-A111CD6EA36E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBManager", "DBManager\DBManager.csproj", "{98E09AC8-1E25-405C-AE0B-CF8B517E1C9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{130B9A91-6A54-4B12-B88F-A111CD6EA36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130B9A91-6A54-4B12-B88F-A111CD6EA36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130B9A91-6A54-4B12-B88F-A111CD6EA36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130B9A91-6A54-4B12-B88F-A111CD6EA36E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E09AC8-1E25-405C-AE0B-CF8B517E1C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E09AC8-1E25-405C-AE0B-CF8B517E1C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E09AC8-1E25-405C-AE0B-CF8B517E1C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E09AC8-1E25-405C-AE0B-CF8B517E1C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
