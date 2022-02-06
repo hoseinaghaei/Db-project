@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DBManager
+﻿namespace DBManager.ORM
 {
-    public partial class BuyDaily
+    public class BuyDaily
     {
         public DateOnly? Date { get; set; }
         public double? Sum { get; set; }

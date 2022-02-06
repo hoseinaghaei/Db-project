@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DBManager
+﻿namespace DBManager.ORM
 {
     public partial class Customeraddress
     {

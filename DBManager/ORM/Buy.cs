@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DBManager
+﻿namespace DBManager.ORM
 {
     public partial class Buy
     {
@@ -13,7 +10,7 @@ namespace DBManager
         public bool? Successful { get; set; }
         public double? Payment { get; set; }
         public int? Score { get; set; }
-        public DateOnly? Date { get; set; }
+        public DateOnly Date { get; set; }
 
         public virtual Externalaccount Account { get; set; } = null!;
         public virtual Good Goods { get; set; } = null!;

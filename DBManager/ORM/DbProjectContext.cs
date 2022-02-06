@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace DBManager
+namespace DBManager.ORM
 {
-    public partial class dbprojectContext : DbContext
+    public partial class DbProjectContext : DbContext
     {
-        public dbprojectContext()
+        public DbProjectContext()
         {
         }
 
-        public dbprojectContext(DbContextOptions<dbprojectContext> options)
+        public DbProjectContext(DbContextOptions<DbProjectContext> options)
             : base(options)
         {
         }
@@ -21,7 +18,7 @@ namespace DBManager
         public virtual DbSet<BuyDaily> BuyDailies { get; set; } = null!;
         public virtual DbSet<Coin> Coins { get; set; } = null!;
         public virtual DbSet<Cryptocurrency> Cryptocurrencies { get; set; } = null!;
-        public virtual DbSet<Customer> Customers { get; set; } = null!;
+        public virtual DbSet<Customer?> Customers { get; set; } = null!;
         public virtual DbSet<Customeraddress> Customeraddresses { get; set; } = null!;
         public virtual DbSet<Enternalaccount> Enternalaccounts { get; set; } = null!;
         public virtual DbSet<Existence> Existences { get; set; } = null!;
