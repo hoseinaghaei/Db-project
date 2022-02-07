@@ -7,7 +7,7 @@ Hi, this is Team 11 speaking, Here is our database project for semester 00-01 [S
 - [Neda Taghizadeh](https://github.com/nedataghizadeh79)
 
 ## Special Thanks
- - [Dr.Amini] (http://ce.sharif.edu/faculty/morteza-amini/) for teaching this lesson.
+ - [Dr.Amini](http://ce.sharif.edu/faculty/morteza-amini/) for teaching this lesson.
  - Mrs.Zarei for her patient to answer all of our questions.
 
 ## file
