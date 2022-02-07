@@ -1,0 +1,87 @@
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 150%;
+    border: 2px solid #cccccc;
+    background-color: white;
+}
+
+td, th {
+    border-top: 2px solid #cccccc;
+    padding: 8px;
+    border-spacing: 0;
+    text-align: center;
+
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #dddddd;
+    font-family: "Source Code Pro", ui-monospace;
+    font-weight: 200;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    border-top: 5px solid;
+    letter-spacing: 5px;
+}
+
+#button-dive {
+    height: 50px;
+    width: 155px;
+}
+
+button {
+    height: inherit;
+    width: inherit;
+    text-transform: uppercase;
+    border: 2px solid whitesmoke;
+    color: gray;
+    letter-spacing: 1px;
+    font-family: "Source Code Pro", ui-monospace;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#button-section {
+    height: 800px;
+    width: 150px;
+    background-color: inherit;
+    /*margin-right: 10%;*/
+    transform:translateX(-350%);
+}
+
+#parent-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}

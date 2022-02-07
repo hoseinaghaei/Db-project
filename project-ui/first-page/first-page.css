@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro : 200,300');
+
+
+
+h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    border-top: 5px solid;
+    letter-spacing: 5px;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    height: 300px;
+    border-radius: 50%;
+}
+
+body {
+    background-color: #F69680;
+    color: #2E1263;
+    font-family: "Source Code Pro", ui-monospace;
+    font-weight: 200;
+}
+
+button {
+    background-color: #F69680;
+    font-size: 16px;
+    text-align: center;
+    border: 1px #2E1263 solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    margin: 30px auto 0;
+    padding: 20px 25px;
+    letter-spacing: 4px;
+}
+
+button:hover {
+    background-color: #2E1263;
+    color: #F69680;
+    transition: 0.2s;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+p {
+    font-family: Sofia;
+    font-size: 15px;
+}
