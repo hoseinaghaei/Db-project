@@ -10,8 +10,8 @@ Hi, this is Team 11 speaking, Here is our database project for semester 00-01 [S
  - [Dr.Amini](http://ce.sharif.edu/faculty/morteza-amini/) for teaching this lesson.
  - Mrs.Zarei for her patient to answer all of our questions.
 
-## file
-- 
+## Folders
+- DBManager : here you will find model, queri maker and all classes that connect to db or define it for example DbProjectContext.
 
 Here you can do one of following:
 * [Start a new phase](https://github.com/Star-Academy/codestar-intern-issues/issues/new/choose)
