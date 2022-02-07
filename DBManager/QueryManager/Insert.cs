@@ -1,4 +1,4 @@
-using DBManager.ORM;
+using DBManager.Model;
 
 namespace DBManager.QueryManager;
 
@@ -19,7 +19,7 @@ public class Insert : IInsert
 
     public async Task InsertNewGoldCoin(Goldcoin goldCoin)
     {
-        await _dbContext.Goldcoins.AddAsync(goldCoin);
+        await _dbContext.GoldCoins.AddAsync(goldCoin);
         await _dbContext.SaveChangesAsync();
     }
 

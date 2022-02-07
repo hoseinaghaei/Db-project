@@ -1,4 +1,3 @@
-using System.Globalization;
 using DBManager.QueryManager;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +24,7 @@ public class SendQueriesController : ControllerBase
             return Ok(new {Id = id, Status = "Not Found"});
         }
 
-        return Ok(new {ID = client.Customerid, FirstName = client.Firstname, LastName = client.Lastname, 
+        return Ok(new {ID = client.CustomerId, FirstName = client.Firstname, LastName = client.Lastname, 
             Username = client.Username, Password = client.Password, Email = client.Email, MainPhone = client.FirstPhone});
     }
     
@@ -49,9 +48,9 @@ public class SendQueriesController : ControllerBase
         var data = _searcher.GetAllBuys().ToList();
         var toSend = data.Select(d => new
         {
-            GoodsID = d.Goodsid, BuyerID = d.Accountid,
-            DOP = d.Digitalorphysical, QTY = d.Qty,  Payment = d.Payment,
-            date = DateTime.Today.AddDays(-3).ToString(CultureInfo.InvariantCulture),
+            GoodsID = d.GoodsId, BuyerID = d.AccountId,
+            DOP = d.DigitalOrPhysical, QTY = d.Qty,  Payment = d.Payment,
+            date = d.Date,
             Successful = d.Successful, Score = d.Score
         });
         return Ok(toSend);
@@ -62,7 +61,7 @@ public class SendQueriesController : ControllerBase
     {
         var goods = _searcher.GetAllGoods();
         var toSend = goods.Select(good => new Commodity() 
-            { Id = int.Parse(good.Goodsid), Name = good.Name, QTY = good.Qty, Wage = good.Wage })
+            { Id = int.Parse(good.GoodsId), Name = good.Name, QTY = good.Qty, Wage = good.Wage })
             .OrderBy(a => a.Id);
         
         return Ok(toSend);

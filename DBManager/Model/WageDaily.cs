@@ -1,4 +1,4 @@
-﻿namespace DBManager.ORM
+﻿namespace DBManager.Model
 {
     public partial class WageDaily
     {

@@ -1,4 +1,5 @@
-using DBManager.ORM;
+using DBManager;
+using DBManager.Model;
 using DBManager.QueryManager;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
@@ -22,7 +23,7 @@ public class InsertDataController : ControllerBase
 
         var customer = new Customer()
         {
-            Customerid = newCustomer.Id,
+            CustomerId = newCustomer.Id,
             Firstname = newCustomer.Firstname,
             Lastname = newCustomer.Lastname,
             Username = newCustomer.Username,
@@ -40,13 +41,14 @@ public class InsertDataController : ControllerBase
 
         var buy = new Buy()
         {
-            Goodsid = newBuy.GoodsId,
-            Accountid = newBuy.AccountId,
-            Transactioncode = Guid.NewGuid().ToString().Substring(2, 8),
+            GoodsId = newBuy.GoodsId,
+            AccountId = newBuy.AccountId,
+            TransactionCode = Guid.NewGuid().ToString().Substring(2, 8),
             Successful = true,
-            Digitalorphysical = newBuy.Dop,
+            DigitalOrPhysical = newBuy.Dop,
             Qty = newBuy.Qty,
-            Score = newBuy.Score
+            Score = newBuy.Score,
+            Sheba = newBuy.Sheba
         };
         await _insert.InsertNewBuy(buy);
         return Ok(buy);
@@ -72,4 +74,6 @@ public class NewBuy
     public string Dop { get; set; } = null!;
     public double Qty { get; set; }
     public int Score { get; set; }
+
+    public string? Sheba { get; set; }
 } 

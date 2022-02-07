@@ -1,4 +1,4 @@
-using DBManager.ORM;
+using DBManager.Model;
 
 namespace DBManager.QueryManager;
 

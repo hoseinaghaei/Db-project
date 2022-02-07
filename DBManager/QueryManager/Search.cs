@@ -1,4 +1,4 @@
-using DBManager.ORM;
+using DBManager.Model;
 
 namespace DBManager.QueryManager;
 
@@ -28,7 +28,7 @@ public class Search : ISearch
 
     public IEnumerable<Good> GetAllGoods()
     {
-        return _dbContext.Goods.OrderBy(a => a.Goodsid);
+        return _dbContext.Goods.OrderBy(a => a.GoodsId);
     }
 
     public IEnumerable<Buy> GetAllBuys()

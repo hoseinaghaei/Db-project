@@ -1,9 +1,9 @@
-﻿namespace DBManager.ORM
+﻿namespace DBManager.Model
 {
     public partial class Existence
     {
-        public string Goodsid { get; set; } = null!;
-        public string Accountid { get; set; } = null!;
+        public string GoodsId { get; set; } = null!;
+        public string AccountId { get; set; } = null!;
         public double? Qty { get; set; }
 
         public virtual Externalaccount Account { get; set; } = null!;
