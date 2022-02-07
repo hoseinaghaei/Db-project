@@ -1,5 +1,7 @@
 # Databse project
 
+Hi, this is Team 11. And here is our database project for semester 00-01 [Sharif University Of Technology](http://ce.sharif.edu/).
+
 ## Authors
 - [Hossein Aghaei](https://github.com/hoseinaghaei)
 - [Neda Taghizadeh](https://github.com/nedataghizadeh79)
