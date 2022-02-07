@@ -10,7 +10,7 @@
         public bool? Successful { get; set; }
         public double? Payment { get; set; }
         public int? Score { get; set; }
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         public virtual Externalaccount Account { get; set; } = null!;
         public virtual Good Goods { get; set; } = null!;

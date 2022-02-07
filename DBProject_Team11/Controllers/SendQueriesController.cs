@@ -1,3 +1,4 @@
+using System.Globalization;
 using DBManager.QueryManager;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,12 +45,13 @@ public class SendQueriesController : ControllerBase
     [HttpGet]
     public IActionResult GetAllBuys()
     {
+        
         var data = _searcher.GetAllBuys().ToList();
         var toSend = data.Select(d => new
         {
             GoodsID = d.Goodsid, BuyerID = d.Accountid,
             DOP = d.Digitalorphysical, QTY = d.Qty,  Payment = d.Payment,
-            date = d.Date.ToDateTime(new TimeOnly(00, 00, 00)),
+            date = DateTime.Today.AddDays(-3).ToString(CultureInfo.InvariantCulture),
             Successful = d.Successful, Score = d.Score
         });
         return Ok(toSend);

@@ -26,6 +26,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DbProjectContext>();
 builder.Services.AddScoped<ISearch, Search>();
+builder.Services.AddScoped<IInsert, Insert>();
 
 
 var app = builder.Build();
