@@ -13,7 +13,4 @@ Hi, this is Team 11 speaking, Here is our database project for semester 00-01 [S
 ## Folders
 - [DBManager](https://github.com/hoseinaghaei/Db-project/tree/master/DBManager) : here you will find model, queri maker and all classes that connect to db or define it for example [DbProjectContext](https://github.com/hoseinaghaei/Db-project/blob/master/DBManager/Model/DbProjectContext.cs).
 - [DBProject_Team11](https://github.com/hoseinaghaei/Db-project/tree/master/DBProject_Team11) : the project is based on ASP .netCore and here there are Controllers and API classes.
-
-Here you can do one of following:
-* [Start a new phase](https://github.com/Star-Academy/codestar-intern-issues/issues/new/choose)
-* [Check open issues](https://github.com/Star-Academy/codestar-intern-issues/issues)
+- [project-ui](https://github.com/hoseinaghaei/Db-project/tree/master/project-ui) : finally here there are some basic html, css and js stuffs to show and run several queries.
