@@ -8,7 +8,7 @@ Hi, this is Team 11 speaking, Here is our database project for semester 00-01 [S
 
 ## Special Thanks
  - [Dr.Amini](http://ce.sharif.edu/faculty/morteza-amini/) for teaching this lesson.
- - Mrs.Zarei for her patient to answer all of our questions.
+ - Mahsa Zarei for her patient to answer all of our questions.
 
 ## Folders
 - [DBManager](https://github.com/hoseinaghaei/Db-project/tree/master/DBManager) : here you will find model, queri maker and all classes that connect to db or define it for example [DbProjectContext](https://github.com/hoseinaghaei/Db-project/blob/master/DBManager/Model/DbProjectContext.cs).
